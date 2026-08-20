@@ -2,7 +2,7 @@
   "name": "mcp-think",
   "version": "0.1.0",
   "private": true,
-  "description": "Stateful sequential-thinking MCP server on Cloudflare Workers + Durable Objects",
+  "description": "Structured sequential-thinking MCP server on Cloudflare Workers + Durable Objects",
   "type": "module",
   "scripts": {
     "dev": "wrangler dev",
@@ -11,12 +11,13 @@
   },
   "dependencies": {
     "@modelcontextprotocol/server": "2.0.0",
-    "agents": "latest",
-    "zod": "^4.0.0"
+    "agents": "^0.20.1",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "latest",
-    "typescript": "latest",
-    "wrangler": "latest"
+    "@cloudflare/workers-types": "^5.20260815.1",
+    "@types/node": "^24.3.0",
+    "typescript": "^6.0.3",
+    "wrangler": "^4.107.1"
   }
 }
