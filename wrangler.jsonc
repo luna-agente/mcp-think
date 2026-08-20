@@ -1,0 +1,20 @@
+{
+  "name": "mcp-think",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "SEQUENCE",
+        "class_name": "SequenceState"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["SequenceState"]
+    }
+  ]
+}
